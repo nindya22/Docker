@@ -1,0 +1,24 @@
+version: "3.9"
+services:
+  web:
+    build: .
+    ports:
+      - "8000:5000"
+    environment:
+      - FLASK_APP=app.py
+      - FLASK_RUN_HOST=0.0.0.0
+    depends_on:
+      - postgres  # Menunggu container "postgres" siap sebelum menjalankan "web"
+
+  postgres:
+    image: postgres:12-alpine
+    restart: always
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=123
+      - POSTGRES_DB=day13
+    ports:
+      - "5430:5432"
+
+  redis:
+    image: "redis:alpine"
