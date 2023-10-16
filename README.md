@@ -86,7 +86,7 @@ for country in countries:
     component_df = pd.DataFrame(countries_list)
 
 ## 4. Run Your Dockerized Application
-Open a terminal in your project directory where the "docker-compose.yml" file is located.
+Open a terminal in your project directory where the "docker-compose.yml" file is located
 Run the following command to build and run your containers:
 docker compose up -d
 This command will start the containers, and the data ingestion script will be executed as specified in the Dockerfile.
