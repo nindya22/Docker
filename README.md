@@ -1,4 +1,11 @@
 # Docker
+
+### Kelompok 10 
+1. Nindya Permatasari
+2. 
+3. 
+4. 
+
 ## 1. Install Docker:
 If you haven't already, you need to install Docker on your machine. You can download and install Docker from the official website (https://www.docker.com/get-started).
 ## 2. Docker Compose and Dockerfile:
